@@ -1,0 +1,30 @@
+services:
+  php:
+    build: ./docker/php
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - 8081:80
+  db:
+    image: mysql:latest
+    volumes:
+      - db:/var/lib/mysql/
+    environment:
+      - MYSQL_ROOT_PASSWORD=123
+      - MYSQL_DATABASE=asho
+      - MYSQL_USER=uasho
+      - MYSQL_PASSWORD=1212
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_HOST=db
+    depends_on:
+      - db
+volumes:
+  db:
+
+
+        
