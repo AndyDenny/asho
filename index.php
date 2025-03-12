@@ -1,3 +1,7 @@
+<?php
+require_once "functions.php";
+use classes\First;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,4 +24,3 @@
     </div>    
 </body>
 </html>
-<?php
