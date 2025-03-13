@@ -1,3 +1,15 @@
 body{
-    background: linear-gradient(179deg, #d9ef99, #b79842);
+    background: linear-gradient(180deg, #fff7eb, #f9bd6a);
+}
+header{
+    display: block;
+    height: 10vh;    
+}
+content{
+    display: block;
+    height: 80vh;    
+}
+footer{
+    display: block;
+    height: 10vh;    
 }
