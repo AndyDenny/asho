@@ -19,6 +19,7 @@ use classes\First;
         <div class="row">
             <div class="col">
                 <h1 class='text-center'>Link Shorter</h1>
+                <?First::hello()?>
             </div>
         </div>
     </div>    
