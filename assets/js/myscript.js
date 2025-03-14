@@ -4,9 +4,10 @@ $(document).ready(function(){
 
     $( "form" ).on( "submit", function( event ) {
         event.preventDefault();
+        let obSerialezeString = $( this ).serialize();
         $.ajax({
             url: $( this ).attr('action'),
-            data: new FormData($( this ).get(0)),
+            data: obSerialezeString,
             dataType: 'json',
             type: 'POST',
             success: function(data){
