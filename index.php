@@ -30,11 +30,13 @@ use classes\First;
     <div class="container">
         <div class="row">
             <div class="col">
-                <form action="ajax/example.php">
+                <form action="ajax/example.php" class="input-link-shorter">
                     <div class="mb-3"> 
                         <input type="text" class="form-control" id="dataInput" name="dataInput" placeholder="put you link here"> 
-                    </div> 
+                    </div>
+                    <div class="p-3 mb-2 bg-light text-dark output-link-data"></div>
                     <button type="submit" class="btn btn-light">Send</button>
+                    <span class="spinner-border text-primary spinner-border-sm spinner-data-input d-none" role="status" aria-hidden="true"></span>
                 </form>
             </div>
         </div>

@@ -1,4 +1,8 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/functions.php";
+use classes\Validator;
 
-$sData = json_encode($_POST);
-echo $sData;
+$sData = new Validator($_POST['dataInput'])->isValidInputString();
+echo "<pre>";
+var_dump($sData) ;
+echo "</pre>";
