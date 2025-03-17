@@ -28,10 +28,10 @@ class Validator
                 if (strlen($sTmpString) > 0){
                     $sTmpString = htmlspecialchars(strip_tags($sTmpString));
                 }else{
-                    throw new \Exception(MessageConstants::$VALIDATOR_EMPTY_STR);
+                    throw new \Exception(MessageConstants::$EMPTY_STR);
                 }
             }else{
-                throw new \Exception(MessageConstants::$VALIDATOR_EMPTY_STR);
+                throw new \Exception(MessageConstants::$EMPTY_STR);
             }
         }catch (\Exception $e) {
             echo $e->getMessage();
